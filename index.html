@@ -1,0 +1,58 @@
+<!--Empezamos colocando <!DOCTYPE html> para indicarle al navegador que tipo de documento debe de abrir-->
+<!--Dentro de ello indicamos las etiquetas bases de nuestro código-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Llamamos el estilo CSS a nuestra pagina, para mayor interacción de código-->
+    <link rel="stylesheet" href="estilo.css" />
+    <!--Se le agrega titulo a la pagina que se abrira en nuestro navegador-->
+    <title>Color RGB</title>
+  </head>
+  <!--Contenido del body-->
+  <body>
+    <!--Contenedor principal del HTML-->
+    <div class="contenedor-principal">
+      <!--Contenedor interno de la capa HTML-->
+      <div class="contenedor-interno">
+        <!--Primera capa de indicadores-->
+        <div class="color">
+          <label for="rojo">Rojo (R)</label>
+          <!-- + Condiciones de la primera capa de gama de colores-->
+          <!-- + Principla ID para el llamado de JS-->
+          <!-- + tipo range para la expecificacion que el usuario debe de tener tipo numerico (MAX and MIN)-->
+          <input id="rojo" type="range" min="0" max="255" value="23" step="1" />
+          <!--llamado de la escala numerica expecificada por el usuario-->
+          <p id="texto-rojo"></p>
+        </div>
+        <!--Segunda capa de indicadores-->
+        <div class="color">
+          <label for="verde">Verde (G)</label>
+          <!-- + Condiciones de la segunda capa de gama de colores-->
+          <input
+            id="verde"
+            type="range"
+            min="0"
+            max="255"
+            value="41"
+            step="1"
+          />
+          <!--llamado de la escala numerica expecificada por el usuario-->
+          <p id="texto-verde"></p>
+        </div>
+        <!--Tercera capa de indicadores-->
+        <div class="color">
+          <label for="azul">Azul (B)</label>
+          <!-- + Condiciones de la tercera capa de gama de colores-->
+          <input id="azul" type="range" min="0" max="255" value="56" step="1" />
+          <!--llamado de la escala numerica expecificada por el usuario-->
+          <p id="texto-azul"></p>
+        </div>
+      </div>
+    </div>
+    <!--Se llama el proyecto JS para la interacción de la página-->
+    <script src="app.js"></script>
+  </body>
+</html>

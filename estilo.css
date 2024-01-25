@@ -1,0 +1,47 @@
+/* Estilos generales */
+
+/*Selector universal*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Selector del contenido*/
+body {
+  height: 100vh;
+  display: flex; /*Adapta las cajas celdas al navegador*/
+  justify-content: center; /*Centra el contenido*/
+  align-items: center;
+  text-align: center;
+  background-color: rgb(233, 240, 245) /*Color a los elemntos*/;
+}
+
+/* Contenedores */
+
+.contenedor-principal {
+  width: 50vw; /*El ancho de la pantalla*/
+  max-width: 600px;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap /*Elemtos "hijos" en una misma linea*/;
+  justify-content: center;
+  align-items: center;
+  background-color: white; /*Le da color al fondo*/
+  border-radius: 50px; /*Borde de la capa principal*/
+}
+/*Propiedades a las capas*/
+.color {
+  padding: 20px; /*Relleno a los elemntos*/
+  margin: 10px;
+  font-size: 2em; /*Dimension de la letra*/
+  font-weight: bold; /*Grueso de la letra*/
+  font-family: Georgia, "Times New Roman", Times, serif; /*Fuente de la letra*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/*Selectores de etiquetas*/
+label,
+p {
+  margin: 20px;
+}
